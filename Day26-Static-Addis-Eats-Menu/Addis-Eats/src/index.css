@@ -1,0 +1,62 @@
+
+body {
+font-family: Arial;
+background-color: #d1ad77;
+}
+.header {
+background-color: brown;
+color: white;
+text-align: center;
+padding: 30px;
+}
+.header h1 {
+margin-bottom: 10px;
+}
+.menu {
+width: 80%;
+margin: 30px auto;
+}
+.menu h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+.menu-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+.menu-card {
+background-color: white;
+width: 250px;
+padding: 20px;
+border-radius: 8px;
+}
+.menu-card h3 {
+margin: 10px 0;
+}
+.category {
+background-color: orange;
+padding: 5px;
+font-size: 13px;
+}
+.description {
+margin: 10px 0;
+}
+.price {
+font-weight: bold;
+font-size: 18px;
+}
+.tax-price {
+font-size: 13px;
+color: gray;
+}
+.menu-card:hover {
+background-color: #eee;
+}
+footer {
+background-color: brown;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 30px;
+}
