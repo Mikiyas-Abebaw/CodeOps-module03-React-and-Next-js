@@ -51,7 +51,8 @@ font-size: 13px;
 color: gray;
 }
 .menu-card:hover {
-background-color: #eee;
+background-color:rgb(205, 202, 202);
+
 }
 footer {
 background-color: brown;
