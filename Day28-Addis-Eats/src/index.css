@@ -1,0 +1,165 @@
+*{
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial;
+background-color: #f2eee8;
+}
+.header {
+background-color: brown;
+color: white;
+text-align: center;
+padding: 30px;
+}
+.header h1 {
+margin-bottom: 10px;
+}
+.menu {
+width: 80%;
+margin: 30px auto;
+}
+.menu h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+.category-bar {
+text-align: center;
+margin-bottom: 25px;
+}
+.category-bar button {
+padding: 8px 15px;
+margin: 5px;
+border: none;
+background-color: #ddd;
+cursor: pointer;
+}
+.category-bar button:hover {
+background-color: orange;
+}
+.category-bar .selected {
+background-color: brown;
+color: white;
+}
+.menu-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+.menu-card {
+background-color: white;
+width: 250px;
+padding: 20px;
+border-radius: 8px;
+}
+.menu-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: hsl(0, 74%, 71%);
+}
+.menu-card h3 {
+margin: 10px 0;
+}
+.category {
+background-color: orange;
+border-radius: 5px;
+padding: 5px;
+font-size: 13px;
+}
+.menu-card p {
+margin: 10px 0;
+}
+.price {
+font-weight: bold;
+font-size: 18px;
+}
+.menu-card button {
+background-color: brown;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 8px 15px;
+cursor: pointer;
+}
+.menu-card button:hover {
+background-color: darkred;
+}
+.order-form {
+width: 300px;
+max-width: 100%;
+margin: 40px auto;
+padding: 20px;
+background-color: white;
+}
+.order-form h2 {
+margin-bottom: 20px;
+}
+.order-form input {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+}
+.order-form button {
+padding: 10px 20px;
+background-color: brown;
+color: white;
+border: none;
+}
+.order-form button:disabled {
+background-color: gray;
+}
+.order-form p {
+color: red;
+margin-bottom: 10px;
+}
+footer {
+background-color: brown;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 30px;
+}
+.category-bar {
+  margin: 20px 0;
+}
+
+.category-bar button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.category-bar button.selected {
+  background: black;
+  color: white;
+}
+
+.menu input {
+  padding: 10px;
+  width: 250px;
+  margin-top: 10px;
+}
+
+.menu-card button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.order-form input {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.order-form button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.order-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
