@@ -23,30 +23,30 @@ function OrderForm() {
 
   return (
     <form className="order-form" onSubmit={handleSubmit}>
-      <h2>Delivery Information</h2>
+      <h2 id="delivery-info">Delivery Information</h2>
 
-      <input
+      <input id="name"
         name="name"
         placeholder="Your name"
         value={form.name}
         onChange={handleChange}
       />
 
-      <input
+      <input id="phone"
         name="phone"
         placeholder="TeleBirr number"
         value={form.phone}
         onChange={handleChange}
       />
 
-      <input
+      <input id="area"
         name="area"
         placeholder="Your area"
         value={form.area}
         onChange={handleChange}
       />
 
-      <button
+      <button id="submit-order"
         type="submit"
         disabled={!form.name || !form.area || !validPhone}
       >
