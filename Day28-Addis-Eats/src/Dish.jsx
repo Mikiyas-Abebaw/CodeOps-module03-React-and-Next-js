@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-function Dish({ name, price, category, spicy, onAdd }) {
+function Dish({ id, name, price, category, spicy, onAdd }) {
   const [count, setCount] = useState(0);
 
   function handleAdd() {
@@ -10,13 +11,15 @@ function Dish({ name, price, category, spicy, onAdd }) {
 
   return (
     <div className="menu-card">
-      <span className="category">{category}</span>
+      <Link to={`/menu/${id}`}>
+        <h3>{name}</h3>
+      </Link>
 
-      <h3>{name}</h3>
+      <span className="category">{category}</span>
 
       <p>{price} ETB</p>
 
-      {spicy && <p>Spicy</p>}
+      {spicy && <p> Spicy</p>}
 
       <button onClick={handleAdd}>Add</button>
 

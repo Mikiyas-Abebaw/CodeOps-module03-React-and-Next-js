@@ -1,20 +1,28 @@
-import Header from "./Header";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
 import Menu from "./Menu";
 import OrderForm from "./OrderForm";
+import DishDetails from "./DishDetails";
+import RequireAuth from "./RequireAuth";
+import SignIn from "./SignIn";
 
 function App() {
   return (
-    <>
-      <Header />
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Menu />} />
 
-      <Menu />
+        <Route path="menu/:id" element={<DishDetails />} />
 
-      <OrderForm />
+        <Route path="signin" element={<SignIn />} />
 
-      <footer>
-        <p>© 2026 Addis Eats</p>
-      </footer>
-    </>
+        <Route element={<RequireAuth />}>
+          <Route path="checkout" element={<OrderForm />} />
+        </Route>
+
+        <Route path="*" element={<h2>Page Not Found</h2>} />
+      </Route>
+    </Routes>
   );
 }
 

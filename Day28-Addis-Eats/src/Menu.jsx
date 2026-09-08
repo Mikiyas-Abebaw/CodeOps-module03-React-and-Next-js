@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { loadDishes } from "./api";
 import DishList from "./DishList";
 
 function Menu() {
-  const [category, setCategory] = useState("All");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const category = searchParams.get("category") || "All";
   const [dishes, setDishes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -73,7 +75,7 @@ function addToOrder(price) {
         {categories.map((item) => (
           <button
             key={item}
-            onClick={() => setCategory(item)}
+            onClick={() => setSearchParams({ category: item })}
             className={category === item ? "selected" : ""}
           >
             {item}

@@ -9,13 +9,14 @@ function DishList({ dishes, onAdd }) {
     <div className="menu-grid">
       {dishes.map((dish) => (
         <Dish
-          key={dish.id}
-          name={dish.name}
-          price={dish.price}
-          category={dish.category}
-          spicy={dish.spicy}
-          onAdd={onAdd}
-        />
+  key={dish.id}
+  id={dish.id}
+  name={dish.name}
+  price={dish.price}
+  category={dish.category}
+  spicy={dish.spicy}
+  onAdd={onAdd}
+/>
       ))}
     </div>
   );
