@@ -176,3 +176,138 @@ body {
 .detail-actions {
   margin-top: 2rem;
 }
+.add-to-cart-btn {
+  background-color: #ea580c;
+  color: white;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #c2410c;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item-info h4 {
+  margin: 0 0 0.25rem 0;
+  color: #111827;
+}
+
+.cart-item-info p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qty-btn {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.qty-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.cart-item-total {
+  font-weight: bold;
+  min-width: 70px;
+  text-align: right;
+}
+
+.remove-btn {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #fecaca;
+}
+
+.cart-summary {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.checkout-link {
+  background-color: #ea580c;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+}
+
+.checkout-link:hover {
+  background-color: #c2410c;
+}
+
+.empty-cart-container {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.empty-cart-text {
+  color: #4b5563;
+  margin: 1rem 0;
+}
+
+.detail-actions-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.btn-large {
+  padding: 0.5rem 1rem;
+}

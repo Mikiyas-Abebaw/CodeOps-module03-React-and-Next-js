@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getDishes } from './api/menu';
+import { useCart } from './CartContext';
 
 export default function DishDetail() {
   const { id } = useParams();
   const [dish, setDish] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const { addToCart } = useCart();
 
   useEffect(() => {
     getDishes()
@@ -30,7 +33,7 @@ export default function DishDetail() {
   if (error || !dish) {
     return (
       <div className="detail-container error-container">
-        <h2 className="error-heading"> {error || 'Unknown Dish ID'}</h2>
+        <h2 className="error-heading">⚠️ {error || 'Unknown Dish ID'}</h2>
         <p className="error-message">The dish you are looking for does not exist or has been removed.</p>
         <Link to="/menu" className="back-link">← Back to Menu</Link>
       </div>
@@ -44,8 +47,11 @@ export default function DishDetail() {
       <p className="detail-desc">{dish.description}</p>
       <div className="detail-price">{dish.price} ETB</div>
       
-      <div className="detail-actions">
-        <Link to="/menu" className="back-link">← Back to Menu</Link>
+      <div className="detail-actions-row">
+        <button onClick={() => addToCart(dish)} className="add-to-cart-btn btn-large">
+          Add to Cart
+        </button>
+        <Link to="/menu" className="back-link" style={{ margin: 0 }}>← Back to Menu</Link>
       </div>
     </div>
   );
