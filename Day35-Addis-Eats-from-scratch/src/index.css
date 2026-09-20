@@ -89,3 +89,90 @@ body {
   color: #4b5563;
   font-size: 1rem;
 }
+.category-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.category-btn:hover {
+  border-color: #ea580c;
+  color: #ea580c;
+}
+
+.category-btn.active {
+  background-color: #ea580c;
+  color: white;
+  border-color: #ea580c;
+}
+
+.detail-container {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.detail-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.detail-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ea580c;
+  margin: 1rem 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: #ea580c;
+}
+.error-container {
+  text-align: center;
+}
+
+.error-heading {
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.detail-desc {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.detail-actions {
+  margin-top: 2rem;
+}
